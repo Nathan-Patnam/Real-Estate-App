@@ -354,11 +354,10 @@
       height: 80%;
       background: white;
       margin: 0 15px;
+      background: url('../img/logo.png') no-repeat center center;
 
 
-      .iphone_screen_info{
-      color: rgb(133, 218, 251);
-      }
+
 
 
 
@@ -370,19 +369,79 @@
   .download-app{
     display: inline-block;
     float: left;
-    background: red;
     margin: 0 10% 0 3%;
-    width: 15%;
+    width: 22%;
+    color: white;
+    margin-bottom: 15px;
+    h1{
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    p{
+      margin-bottom: 15px;
+      font-weight: 200;
+      color: rgba(231, 230, 234,.4);
+    }
+    .buttons{
+      margin-bottom: 20px;
+
+      button{
+        .fa{
+          font-size: 20px;
+          margin: 5px;
+        }
+        height: 60px;
+        width: 120px;
+        margin: 0 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        background-image: linear-gradient(to bottom, #ff6e79, #ff667b, #ff5f7e, #ff5682, #ff4e86);
+        color: white;
+        font-size: 16px;
+        border: none;
+      }
+    }
   }
 
   .for-tenants{
     display: inline-block;
     float: left;
+    margin-right: 15px;
+    h3{
+      color: white;
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 15px;
+
+    }
+    p{
+      margin-bottom: 15px;
+      font-weight: 200;
+      color: rgba(231, 230, 234,.4);
+      cursor: pointer;
+    }
+
   }
 
   .for-advertisers{
     display: inline-block;
     float: left;
+    color: white;
+    margin-left: 15px;
+    h3{
+      color: white;
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+    p{
+      margin-bottom: 15px;
+
+      font-weight: 200;
+      color: rgba(231, 230, 234,.4);
+      cursor: pointer;
+    }
   }
 }
 

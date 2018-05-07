@@ -160,8 +160,4 @@ let listings = [
   }
 ]
 
-
-
-
-
 export default listings

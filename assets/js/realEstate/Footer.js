@@ -36,8 +36,7 @@ export default class Footer extends Component {
 
             <div className='iphone_screen'>
 
-              <p className='iphone_screen_info'>Nathan V. Patnam
-                Listings</p>
+              <div className='iphone_screen_info'></div>
             </div>
 
           </div>
@@ -47,8 +46,8 @@ export default class Footer extends Component {
             <p>Use our app to have 11,729 rental properties at hand</p>
 
             <div className='buttons'>
-              <button>Playstore</button>
-              <button>Appstore</button>
+              <button><i className="fa fa-apple"></i>Playstore</button>
+              <button><i className="fa fa-android"></i>Appstore</button>
             </div>
             <div className='social-media-icons'>
 

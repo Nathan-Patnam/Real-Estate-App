@@ -979,11 +979,7 @@ var Footer = function (_Component) {
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               { className: 'iphone_screen' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'p',
-                { className: 'iphone_screen_info' },
-                'Nathan V. Patnam Listings'
-              )
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'iphone_screen_info' })
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -1005,11 +1001,13 @@ var Footer = function (_Component) {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'button',
                 null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-apple' }),
                 'Playstore'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'button',
                 null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-android' }),
                 'Appstore'
               )
             ),
