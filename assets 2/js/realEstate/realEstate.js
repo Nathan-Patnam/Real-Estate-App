@@ -25,14 +25,11 @@ class App extends Component {
       gym: false,
       filteredData: listings,
       formDate: '',
-      sortby: 'price-asc',
-      view: 'long',
-      search: ''
+      sortby: 'price-asc'
     }
     this.change = this.change.bind(this)
     this.filter = this.filter.bind(this)
     this.populate = this.populate.bind(this)
-    this.changeView = this.changeView.bind(this)
   }
 
   componentWillMount(){
@@ -55,16 +52,9 @@ class App extends Component {
         [name]: value
       },
       () => {
-
         this.filter()
       }
     )
-  }
-
-  changeView(viewName){
-    this.setState({
-      view: viewName
-    })
   }
 
   filter () {
@@ -100,16 +90,6 @@ class App extends Component {
         return b.price - a.price
       })
     }
-    if(this.state.search !== ''){
-      newData = newData.filter((item) => {
-        let city = item.city.toLowerCase()
-        let searchText = this.state.search.toLocaleLowerCase()
-        let n = city.match(searchText)
-        if (n != null) {
-          return true
-        }
-      })
-    }
 
     this.setState({
       filteredData: newData
@@ -117,7 +97,7 @@ class App extends Component {
     )
   }
 
-  populate () {
+  populate(){
     // city
 
     let cities = this.state.listings.map((item) => {
@@ -162,7 +142,7 @@ class App extends Component {
       <Header globalState={this.state} />
       <section id='content-area'>
         <Filter globalState={this.state} change={this.change} populateAction={this.populate}/>
-        <Listings listings={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView} />
+        <Listings listings={this.state.filteredData} change={this.change}/>
       </section>
       <Footer />
     </div>)

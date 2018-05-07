@@ -357,7 +357,7 @@
 
 
       .iphone_screen_info{
-      color: rgb(133, 218, 251);
+      rgb(133, 218, 251)
       }
 
 
@@ -405,8 +405,6 @@
 
 #pagination{
   text-align: center;
-  width: 100%;
-  display: block;
   .pages{
     display: inline-block;
 
@@ -431,3 +429,15 @@
   }
 }
 
+.col-md-3{
+  width: 25%;
+  display: inline-block;
+vertical-align: top;
+
+}
+
+
+.col-md-9{
+  width: 75%;
+  display: inline-block;
+}

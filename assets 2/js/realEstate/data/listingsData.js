@@ -131,32 +131,6 @@ let listings = [
     ],
     homeType: 'house',
     imgURL: 'https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&h=350 1x, https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350 2x'
-  },
-  {
-    address: '43 Dae Way',
-    city: 'Uganda',
-    state: 'MI',
-    rooms: 2,
-    price: 1000,
-    floor_space:100,
-    extras: [
-
-    ],
-    homeType: 'apartment',
-    imgURL: 'https://i.pinimg.com/originals/26/ec/66/26ec662f8924a65c289a777d16bfbabf.jpg'
-  },
-  {
-    address: '1 Batmane Cave',
-    city: 'New York',
-    state: 'NY',
-    rooms: 5,
-    price: 3000,
-    floor_space: 3500,
-    extras: [
-
-    ],
-    homeType: 'house',
-    imgURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5pwDV4PWSLt_5dIXI2eYHphYkvOMKFJI2xXcAZ2VVdR3QuEwoQ'
   }
 ]
 

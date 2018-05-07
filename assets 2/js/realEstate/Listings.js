@@ -17,11 +17,9 @@ export default class Listings extends Component {
     }
 
     return listings.map((listing, index) => {
-      // this is the box view
-      if (this.props.globalState.view === 'box') {
         return (<div className='col-md-3 listings-results' key={index}>
           <div className='listing'>
-            <div className='listing-img' style={{background: `url("${listing.imgURL}") no-repeat center center`}}>
+            <div className='listing-img' style={{ background: `url("${listing.imgURL}") no-repeat center center`}}>
               <span className='address'>{listing.address}</span>
               <div className='details'>
                 <div className='col-md-3'>
@@ -66,56 +64,6 @@ export default class Listings extends Component {
 
           </div>
         </div>)
-      } else {
-        // this is the long view
-        return (<div className='col-md-12 col-lg-6 listings-results' key={index}>
-          <div className='listing'>
-            <div className='listing-img' style={{background: `url("${listing.imgURL}") no-repeat center center`}}>
-              <span className='address'>{listing.address}</span>
-              <div className='details'>
-                <div className='col-md-3'>
-                  <div className='user-img'></div>
-                </div>
-
-
-                <div className='col-md-9'>
-                  <div className='user-details'>
-                    <span className='user-name'>Nathan Patnam</span>
-                    <span className='post-date'>Posted on 04/29/2018</span>
-                  </div>
-                  <div className='listing-details'>
-                    <div className='floor-space'>
-                      <i className='fa fa-square-o'></i>
-                      <span>{listing.floor_space}ft &sup2;</span>
-
-                    </div>
-                    <div className='bedrooms'>
-                      <i className='fa fa-bed'></i>
-                      <span>{listing.rooms} bedrooms</span>
-                    </div>
-
-                  </div>
-                  <div className='view-btn'>
-                    View Listing
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-
-            <div className='bottom-info'>
-              <span className='listing-price'>${listing.price} per month</span>
-              <span className='listing-location'>
-                <i className='fa fa-map-marker'></i>
-                {listing.city}, {listing.state}
-              </span>
-
-            </div>
-
-          </div>
-        </div>)
-      }
     }
     )
   }
@@ -124,7 +72,7 @@ export default class Listings extends Component {
     return (
       <section id='listings'>
         <section className='search-area'>
-          <input type='text' name='search' onChange={this.props.change} placeholder='Search...'/>
+          <input type='text' name='search' placeholder='Search...'/>
 
         </section>
         <section className='sortby-area'>
@@ -139,18 +87,15 @@ export default class Listings extends Component {
 
             </select>
             <div className='view'>
-              <i className='fa fa-th-list' onClick={this.props.changeView.bind(null, 'long')}></i>
-              <i className='fa fa-th' onClick={this.props.changeView.bind(null, 'box')}></i>
+              <i className='fa fa-th-list'></i>
+              <i className='fa fa-th'></i>
             </div>
           </div>
         </section>
         <section className='listings-results'>
-          <div className='row'>
           {this.loopListings()}
-          </div>
         </section>
         <section id='pagination'>
-          <div className='row'>
 
           <ul className='pages'>
             <li>Prev</li>
@@ -160,8 +105,8 @@ export default class Listings extends Component {
             <li>4</li>
             <li>Next</li>
           </ul>
-          </div>
         </section>
+
       </section>
 
     )
